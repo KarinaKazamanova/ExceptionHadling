@@ -6,6 +6,7 @@ public class DZ2_4 {
     public static void main(String[] args) throws Exception {
         try {
             noempty();
+            System.out.println("Все ок!");
         } catch (emptyStringException e) {
             System.out.println(e.getMessage());
         }
@@ -17,9 +18,7 @@ public class DZ2_4 {
         String inputString = s.nextLine();
         if (inputString.length() == 0) {
             throw new emptyStringException();
-        } else {
-            System.out.println("Все ок!");
-        }
+        } 
         s.close();
     }
 }
